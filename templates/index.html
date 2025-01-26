@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Diploma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #edf2ef;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #edb230;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            margin: 20px 0;
+            padding: 15px;
+            font-size: 18px;
+            border: 2px solid #edb230;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .input-field:focus {
+            border-color: #ff9900;
+        }
+        button {
+            background-color: #edb230;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff9900;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generar Diploma</h1>
+        <form action="/generar_diploma" method="post" autocomplete="off">
+    <input type="text" name="nombre" class="input-field" placeholder="Ingrese el nombre" required>
+    <input type="date" name="fecha" class="input-field" placeholder="Ingrese la fecha" required>
+    <br>
+    <button type="submit">Generar Diploma</button>
+</form>
+
+        <div class="footer">
+            <p>Desarrollado por Joaquín Córdova Padilla</p>
+        </div>
+    </div>
+
+</body>
+</html>
